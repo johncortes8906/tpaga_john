@@ -109,3 +109,8 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+Configure::write('TPAGA_PARAMS', array(
+	'url' => 'https://stag.wallet.tpaga.co/merchants/api/v1',
+	'token' => 'bWluaWFwcC1nYXRvMzptaW5pYXBwbWEtMTIz'
+));

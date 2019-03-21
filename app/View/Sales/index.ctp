@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Halcyonic by HTML5 UP</title>
+		<title>Dev Test John</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -21,15 +21,14 @@
 							<div class="col-12">
 
 								<!-- Logo -->
-									<h1><a href="index.html" id="logo">Halcyonic</a></h1>
+									<h1><a href="/" id="logo">Home</a></h1>
 
 								<!-- Nav -->
 									<nav id="nav">
-										<a href="index.html">Homepage</a>
-										<a href="threecolumn.html">Three Column</a>
-										<a href="twocolumn1.html">Two Column #1</a>
-										<a href="twocolumn2.html">Two Column #2</a>
-										<a href="onecolumn.html">One Column</a>
+										<a href="index.html"><?php echo $this->Html->link('Inicio', array('controller'=> 'sales', 'action' => 'index'));?></a>
+										<a href="threecolumn.html"><?php echo $this->Html->link('Nueva compra', array('controller'=> 'sales', 'action' => 'new_sale'));?></a>
+										<a href="twocolumn1.html"><?php echo $this->Html->link('Estado de mi compra', array('controller'=> 'sales', 'action' => 'sale_status'));?></a>
+										<a href="twocolumn2.html"><?php echo $this->Html->link('Histórico', array('controller'=> 'sales', 'action' => 'sales_list'));?></a>
 									</nav>
 
 							</div>
