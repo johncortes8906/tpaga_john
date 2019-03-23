@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Histórico</title>
+		<title>Inicio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -19,32 +19,32 @@
 					<div class="container">
 
 						<!-- Logo -->
-							<h1 id="logo"><a href="/">Red Sports</a></h1>
+							<h1 id="logo"><a href="index.html">Red Sports</a></h1>
 							<p>Una tienda donde pruedes encontrar cualquier artículo deportivo para tu diversión.</p>
 
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
-									<li><a class="icon fa-home"><span><?php echo $this->Html->link(
-										    'Inicio',
-										    '/',
-										    array('class' => 'sales', 'action' => 'index'))?></span></a>
+									<li><a class="icon fa-home" href="index.html"><span>Inicio</span></a></li>
+									<li>
+										<a href="#" class="icon fa-bar-chart-o"><span>Nueva Compra</span></a>
+										<ul>
+											<li><a href="#">Lorem ipsum dolor</a></li>
+											<li><a href="#">Magna phasellus</a></li>
+											<li><a href="#">Etiam dolore nisl</a></li>
+											<li>
+												<a href="#">Phasellus consequat</a>
+												<ul>
+													<li><a href="#">Magna phasellus</a></li>
+													<li><a href="#">Etiam dolore nisl</a></li>
+													<li><a href="#">Phasellus consequat</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Veroeros feugiat</a></li>
+										</ul>
 									</li>
-									<li><a class="icon fa-home"><span><?php echo $this->Html->link(
-										    'Nueva compra',
-										    '/ventas/nueva_compra',
-										    array('class' => 'sales', 'action' => 'new_sale'))?></span></a>
-									</li>
-									<li><a class="icon fa-home"><span><?php echo $this->Html->link(
-										    'Estado de mi compra',
-										    '/ventas/estado_compra',
-										    array('class' => 'sales', 'action' => 'order_status'))?></span></a>
-									</li>
-									<li><a class="icon fa-home"><span><?php echo $this->Html->link(
-										    'Histórico',
-										    '/ventas/historico_compras',
-										    array('class' => 'sales', 'action' => 'sales_list'))?></span></a>
-									</li>
+									<li><a class="icon fa-cog" href="left-sidebar.html"><span>Estado de mi compra</span></a></li>
+									<li><a class="icon fa-retweet" href="right-sidebar.html"><span>Histórico</span></a></li>
 								</ul>
 							</nav>
 

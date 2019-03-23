@@ -29,12 +29,19 @@ class Order extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		),		
+		),
+		'Establishment' => array(
+			'className' => 'Establishment',
+			'foreignKey' => 'establishment_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)		
 	);
 
 	public function getOrdersByUserId($userId)
 	{
-		$fields = array('Order.order_date', 'Order.shopping_cart', 'User.user_name', 'OrderStatus.status_name');
+		$fields = array('Order.order_date', 'Order.shopping_cart', 'User.user_name', 'OrderStatus.status_name', 'Order.transaction_status');
 		return $this->find('all', array(
 			'fields' => $fields,
 			'conditions' => array('Order.user_id' => $userId),

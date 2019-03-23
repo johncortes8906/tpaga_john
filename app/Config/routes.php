@@ -41,14 +41,19 @@
 		'action' => 'new_sale'
 	));
 
-	Router::connect('/ventas/estado_de_mi_compra', array(
+	Router::connect('/ventas/confirmar_compra/:order_id', array(
 		'controller' => 'sales',
-		'action' => 'sale_status'
+		'action' => 'confirm_order'
 	));
 
 	Router::connect('/ventas/historico_compras', array(
 		'controller' => 'sales',
 		'action' => 'sales_list'
+	));
+
+	Router::connect('/ventas/estado_compra', array(
+		'controller' => 'sales',
+		'action' => 'order_status'
 	));
 
 /**

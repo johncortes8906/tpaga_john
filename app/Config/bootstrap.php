@@ -114,3 +114,13 @@ Configure::write('TPAGA_PARAMS', array(
 	'url' => 'https://stag.wallet.tpaga.co/merchants/api/v1',
 	'token' => 'bWluaWFwcC1nYXRvMzptaW5pYXBwbWEtMTIz'
 ));
+
+Configure::write('DOMAIN_URL', 'https://redsports.com');
+
+Configure::write('OrderStatuses', array(
+	'CREATED' => 1,
+	'FAILED' => 2,
+	'RECEIVED' => 3,
+	'ACCEPTED' => 4,
+	'REJECTED' => 5
+));
